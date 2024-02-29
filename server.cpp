@@ -273,7 +273,7 @@ bool http_body_pred(const CustomerData &cond) {
     std::string user(cond.user);
     std::string commit(cond.commit);
 
-    //根据自己需求来控制
+    ////鏍规嵁鑷繁鐨勯渶姹傛潵鎺у埗
     return branch == "dev"
            || user == "root"
            || commit.compare(0, strlen("compile"), "compile") == 0;
